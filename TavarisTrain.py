@@ -26,12 +26,12 @@ spark = SparkSession \
 
 
 ## Load Training Dataset. Pull data, make header and 'inferSchema' so column has integer values(or appropirate values)
-train_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/home/ubuntu/CS643/tavarisTrainingDataset.csv')
-validation_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/home/ubuntu/CS643/tavarisValidationDataset.csv')
+train_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/home/ubuntu/CS643-AWS-ProgAssgn-2/tavarisTrainingDataset.csv')
+validation_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/home/ubuntu/CS643-AWS-ProgAssgn-2/tavarisValidationDataset.csv')
 
 #Used at the end for Second set of Prediction values
-train_RandForest = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/home/ubuntu/CS643/tavarisTrainingDataset.csv')
-validation_RandForest = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/home/ubuntu/CS643/tavarisValidationDataset.csv')
+train_RandForest = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/home/ubuntu/CS643-AWS-ProgAssgn-2/tavarisTrainingDataset.csv')
+validation_RandForest = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/home/ubuntu/CS643-AWS-ProgAssgn-2/tavarisValidationDataset.csv')
 
 
 print("Original Data loaded from local directory on Master EC2 Instance.")
