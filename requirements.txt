@@ -1,0 +1,7 @@
+pyspark==3.5.1
+# Add other dependencies here
+quinn
+pandas
+pyspark
+findspark
+numpy
