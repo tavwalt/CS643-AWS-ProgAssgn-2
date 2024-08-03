@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import quinn
 import findspark
-findspark.init('/opt/spark/spark-3.5.1-bin-hadoop3')
+findspark.init('/app/spark-3.5.1-bin-hadoop3')
 
 #from pyspark.sql import SparkSession
 from pyspark.sql.types import IntegerType, DoubleType
